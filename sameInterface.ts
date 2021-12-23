@@ -42,7 +42,7 @@ const saveAuthor = (author: Author) => console.log(`Saving author :`, {
     author
 });
 
-const saveSong = (song: Song) => console.log(`Saving sing :`, {
+const saveSong = (song: Song) => console.log(`Saving song :`, {
     song
 });
 
@@ -65,6 +65,8 @@ Error: Argument of type 'Book' is not assignable to parameter of type 'Song'.
   the property year is missing in book and author, so at 
   runtime if we try to access year from book or author, it will give error
   and thus typescript does not allow it
+
+  But if we make year optional in Song interface, it will work
 */
 
 // saveSong(book);
