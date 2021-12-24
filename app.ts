@@ -35,8 +35,8 @@ it consists of key type pairs (when hover on person)
 */
 
 const person = {
-    name : "Khushbu",
-    age : 27
+    name: "Khushbu",
+    age: 27
 };
 
 /*
@@ -48,21 +48,21 @@ const person = {
     but in this case we lose on all javasript object properties
 */
 
-const car : object = {
-    name : "Accord",
-    model : "XL"
+const car: object = {
+    name: "Accord",
+    model: "XL"
 };
 
 // Property 'name' does not exist on type 'object'
 // below line will give error
 // console.log(car.name);
 
-const validCar : {
-    name : string,
-    model : string
+const validCar: {
+    name: string,
+    model: string
 } = {
-    name : "Camri",
-    model : "Sports"
+    name: "Camri",
+    model: "Sports"
 };
 
 console.log(validCar.name);
@@ -70,14 +70,14 @@ console.log(validCar.name);
 // ARRAYS
 
 // takes an array only of strings
-const names : string[] = ["Khushbu", "John", "Janice"];
+const names: string[] = ["Khushbu", "John", "Janice"];
 
 // takes an array of both numbers and strings
 const playersInTeam: (string | number)[] = ["India", 1];
 
-const hobbies : string[] = ["Cooking", "Reading", "Coding"];
+const hobbies: string[] = ["Cooking", "Reading", "Coding"];
 
-for(const hobby of hobbies) {
+for (const hobby of hobbies) {
     console.log(hobby.toUpperCase());
 }
 
@@ -92,7 +92,7 @@ for(const hobby of hobbies) {
     TUPLE IS FIXED LENGTH AND FIXED TYPE ARRAY
 */
 
-const address : [string, number] = ["Main Road", 123];
+const address: [string, number] = ["Main Road", 123];
 address[0] = "New Road";
 
 // below line will give error
@@ -102,3 +102,16 @@ address[0] = "New Road";
 address.push(100);
 
 console.log(address);
+
+// ENUM
+
+enum ROLE {
+    ADMIN,
+    READ_ONLY_USER,
+    GATEKEEPER
+}
+
+const visitor = {
+    name: "Khushbu",
+    role: ROLE.READ_ONLY_USER
+};
