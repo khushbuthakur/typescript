@@ -111,6 +111,8 @@ enum ROLE {
     GATEKEEPER
 }
 
+enum ROLES {A = 9, B, C};
+
 const visitor = {
     name: "Khushbu",
     role: ROLE.READ_ONLY_USER
