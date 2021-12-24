@@ -1,4 +1,5 @@
 const operations = (
+  // union types
   input1: string | number,
   input2: string | number,
   /* this is literal type
