@@ -66,3 +66,39 @@ const validCar : {
 };
 
 console.log(validCar.name);
+
+// ARRAYS
+
+// takes an array only of strings
+const names : string[] = ["Khushbu", "John", "Janice"];
+
+// takes an array of both numbers and strings
+const playersInTeam: (string | number)[] = ["India", 1];
+
+const hobbies : string[] = ["Cooking", "Reading", "Coding"];
+
+for(const hobby of hobbies) {
+    console.log(hobby.toUpperCase());
+}
+
+/*
+    COOKING
+    READING
+    CODING
+*/
+
+// TUPLE
+/*
+    TUPLE IS FIXED LENGTH AND FIXED TYPE ARRAY
+*/
+
+const address : [string, number] = ["Main Road", 123];
+address[0] = "New Road";
+
+// below line will give error
+// address[1] = "4";
+
+// this works and is bug in typescript
+address.push(100);
+
+console.log(address);

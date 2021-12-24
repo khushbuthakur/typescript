@@ -51,3 +51,26 @@ var validCar = {
     model: "Sports"
 };
 console.log(validCar.name);
+// ARRAYS
+// takes an array only of strings
+var names = ["Khushbu", "John", "Janice"];
+// takes an array of both numbers and strings
+var playersInTeam = ["India", 1];
+var hobbies = ["Cooking", "Reading", "Coding"];
+for (var _i = 0, hobbies_1 = hobbies; _i < hobbies_1.length; _i++) {
+    var hobby = hobbies_1[_i];
+    console.log(hobby.toUpperCase());
+}
+/*
+    COOKING
+    READING
+    CODING
+*/
+// TUPLE
+/*
+    TUPLE IS FIXED LENGTH AND FIXED TYPE ARRAY
+*/
+var address = ["Main Road", 123];
+address[0] = "New Road";
+address.push(100);
+console.log(address);
